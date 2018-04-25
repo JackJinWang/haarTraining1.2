@@ -907,8 +907,8 @@ void icvBoost(int stage, CvIntHaarFeatures* haarFeatures,CvHaarTrainigData* haar
 	//		three = clock();
 	//		cout << "分解到数组：" << (three - two) / CLOCKS_PER_SEC * 1000 << endl;
 			//对vector排序
-			bubbleSort(vector_feat, idx, sampleNumber);
-			//quickSort(vector_feat, idx, 0,sampleNumber - 1);
+			//bubbleSort(vector_feat, idx, sampleNumber);
+			quickSort(vector_feat, idx, 0,sampleNumber - 1);
 			//four = clock();
 			//cout << "排序：" << (four - three) / CLOCKS_PER_SEC * 1000 << endl;
 			//对vector数值进行筛选
